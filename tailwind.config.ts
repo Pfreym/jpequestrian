@@ -7,7 +7,9 @@ export default {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
-      },
+        allison: ["allison", ...fontFamily.sans],
+        epilogue: ["epilogue", ...fontFamily.sans],
+        },
     },
   },
   plugins: [],
