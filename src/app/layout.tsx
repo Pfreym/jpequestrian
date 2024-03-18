@@ -9,6 +9,7 @@ import { Navbar } from "./_components/navbar";
 
 
 
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -33,8 +34,8 @@ export default function RootLayout({
       <body>
         <TRPCReactProvider>
           <Navbar />
-          {children}<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script></TRPCReactProvider>
-          
+          {children}</TRPCReactProvider>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" async></script>
       </body>
     </html>
   );
