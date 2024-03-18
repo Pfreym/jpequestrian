@@ -33,7 +33,8 @@ export default function RootLayout({
       <body>
         <TRPCReactProvider>
           <Navbar />
-          {children}</TRPCReactProvider>
+          {children}<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script></TRPCReactProvider>
+          
       </body>
     </html>
   );
