@@ -3,31 +3,39 @@ import logo from "../../../public/images/logo.png";
 
 export function Navbar () {
     return (
-        <div className="flex py-4 bg-gray-50">
-            <div className="flex items-center gap-4 bg-gray-50">
-                <Image 
+
+<nav className="bg-gray-50 border-gray-200">
+  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
+    <Image 
                 src={logo}
-                width={100}
-                height={100}
+                width={40}
+                height={40}
                 alt="Logo"/>
-                <span className="flex text-6xl font-normal items-center text-black font-allison">JP Equestrian</span>
-                </div>
-                    <div className="flex justify-between m-auto">
-                        <div className="font-inter p-6 text-gray-400">Services</div>
-                        <div className="font-inter p-6 text-gray-400">About</div>
-                        <div className="font-inter p-6 text-gray-400">Contact</div>
-                        <div className="font-inter p-6 text-gray-400">Blog</div>
-                    </div>
-                    <div>
-                    <div className="flex text-center p-4 pr-24">
-  <a href="book" className="mx-auto flex h-10 w-full max-w-4xl justify-center rounded-lg bg-black p-2 pl-6 pr-6 font-inter text-white shadow-lg hover:border-2 hover:border-gray-200">
-    <button id="book">Book Now</button>
-  </a>
-</div>
-                    </div>
-            </div>
-
-    )
-}
-
-
+        <span className="self-center text-4xl font-allison whitespace-nowrap">JP Equestrian</span>
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span className="sr-only">Open main menu</span>
+        <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-50">
+        <li>
+          <a href="/" className="block py-2 px-3 text-gray-400 bg-black rounded md:bg-transparent md:text-black md:p-0 " aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#" className="block py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:black md:p-0">About</a>
+        </li>
+        <li>
+          <a href="#" className="block py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:black md:p-0 ">Services</a>
+        </li>
+        <li>
+          <a href="/book" className="block py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:black md:p-0">Book Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    ) }

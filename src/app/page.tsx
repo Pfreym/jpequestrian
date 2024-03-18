@@ -6,9 +6,11 @@ export default async function Home() {
   
 
   return (
-    <div className="flex flex-col items-center bg-gray-50 justify-center min-h-screen py-2">
+  <div className="bg-gray-50">
+    <div className=" bg-gray-50 md:max-w-screen-lg md:justify-center min-h-screen m-auto py-2">
       <Splash/>
     </div>
+  </div>
     )
 }
 

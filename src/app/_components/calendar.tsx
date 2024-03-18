@@ -45,7 +45,8 @@ export function Calendar () {
     const times = getTimes()
 
     return ( 
-        <div className="h-screen flex flex-row justify-center items-center">
+        <div className="flex m-auto justify-center">
+        <div className="h-screen justify-center items-center">
             {date.justDate ? (
                  <div className="flex gap-4">
                     {times?.map ((time, i) => (
@@ -64,6 +65,7 @@ export function Calendar () {
             onClickDay={(date) => setDate ((prev) => ({ ...prev, justDate: date }))}
             />
                  )}
+        </div>
         </div>
         )
 }
