@@ -20,8 +20,8 @@ export function Navbar () {
                     </div>
                     <div>
                     <div className="flex text-center p-4 pr-24">
-  <a href="/signup" className="mx-auto flex h-10 w-full max-w-4xl justify-center rounded-lg bg-black p-2 pl-6 pr-6 font-inter text-white shadow-lg hover:border-2 hover:border-gray-200">
-    <button id="signup">Book Now</button>
+  <a href="book" className="mx-auto flex h-10 w-full max-w-4xl justify-center rounded-lg bg-black p-2 pl-6 pr-6 font-inter text-white shadow-lg hover:border-2 hover:border-gray-200">
+    <button id="book">Book Now</button>
   </a>
 </div>
                     </div>
