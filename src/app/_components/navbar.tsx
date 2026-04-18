@@ -22,7 +22,8 @@ export function Navbar() {
           href="/book"
           className="inline-flex min-h-[44px] items-center justify-center rounded-full border border-[var(--saddle)] bg-[var(--saddle)] px-5 text-sm font-semibold tracking-[0.08em] text-[var(--parchment-soft)] transition hover:bg-[var(--saddle-deep)]"
         >
-          Book a Session
+          <span className="sm:hidden">Book</span>
+          <span className="hidden sm:inline">Book a Session</span>
         </Link>
       </div>
     </header>
