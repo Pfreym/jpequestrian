@@ -1,5 +1,4 @@
 import "~/styles/globals.css";
-import "~/styles/calendar.css";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import { Navbar } from "./_components/navbar";

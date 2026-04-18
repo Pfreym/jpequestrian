@@ -7,7 +7,13 @@ export const env = createEnv({
    * isn't built with invalid env vars.
   */
   server: {
+    BOOKING_EMAIL_FROM: z.string().email().optional(),
+    BOOKING_EMAIL_TO: z.string().email().optional(),
     OPENAI_API_KEY: z.string().min(1).optional(),
+    SMTP_HOST: z.string().min(1).optional(),
+    SMTP_PASS: z.string().min(1).optional(),
+    SMTP_PORT: z.string().min(1).optional(),
+    SMTP_USER: z.string().min(1).optional(),
     NODE_ENV: z
       .enum(["development", "test", "production"])
       .default("development"),
@@ -27,7 +33,13 @@ export const env = createEnv({
    * middlewares) or client-side so we need to destruct manually.
   */
   runtimeEnv: {
+    BOOKING_EMAIL_FROM: process.env.BOOKING_EMAIL_FROM,
+    BOOKING_EMAIL_TO: process.env.BOOKING_EMAIL_TO,
     OPENAI_API_KEY: process.env.OPENAI_API_KEY,
+    SMTP_HOST: process.env.SMTP_HOST,
+    SMTP_PASS: process.env.SMTP_PASS,
+    SMTP_PORT: process.env.SMTP_PORT,
+    SMTP_USER: process.env.SMTP_USER,
     NODE_ENV: process.env.NODE_ENV,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
