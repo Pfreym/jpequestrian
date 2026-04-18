@@ -4,15 +4,15 @@ import logo from "../../../public/images/logo.png";
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-40 border-b border-[var(--line)] bg-[color:rgba(251,248,242,0.82)] backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-[var(--line)] bg-[color:rgba(255,255,255,0.84)] backdrop-blur-md">
       <div className="page-shell flex items-center justify-between gap-4 py-4">
         <Link href="/" className="flex items-center gap-3 text-[var(--ink)]">
           <Image src={logo} width={44} height={44} alt="JP Equestrian logo" />
           <div className="leading-none">
-            <div className="text-xs uppercase tracking-[0.28em] text-[var(--sage-deep)]">
+            <div className="brand-script text-[1.9rem] text-[var(--sage-deep)]">
               JP Equestrian
             </div>
-            <div className="mt-1 text-sm text-[var(--ink-soft)]">
+            <div className="mt-1 text-[11px] uppercase tracking-[0.24em] text-[var(--ink-soft)]">
               Coaching for horse and rider
             </div>
           </div>

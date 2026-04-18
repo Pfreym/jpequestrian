@@ -36,22 +36,14 @@ export function Splash() {
               and a plan that respects both performance and partnership.
             </p>
 
-            <div className="mt-8">
-              <a
-                href="/book"
-                className="inline-flex min-h-[48px] items-center justify-center rounded-full border border-[var(--saddle)] bg-[var(--saddle)] px-7 text-sm font-semibold uppercase tracking-[0.12em] text-[var(--parchment-soft)] transition hover:bg-[var(--saddle-deep)]"
-              >
-                Book your first session
-              </a>
-            </div>
           </div>
 
           <div className="relative">
             <div className="relative overflow-hidden">
-              <div className="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-[color:rgba(246,241,232,0.5)] via-[color:rgba(246,241,232,0.14)] to-transparent sm:h-16" />
-              <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[color:rgba(246,241,232,0.45)] via-[color:rgba(246,241,232,0.08)] to-transparent sm:h-24" />
-              <div className="absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-[color:rgba(246,241,232,0.52)] via-[color:rgba(246,241,232,0.18)] to-transparent sm:w-14 lg:w-16" />
-              <div className="absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-[color:rgba(246,241,232,0.52)] via-[color:rgba(246,241,232,0.18)] to-transparent sm:w-14 lg:w-16" />
+              <div className="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-[color:rgba(243,244,242,0.42)] via-[color:rgba(243,244,242,0.12)] to-transparent sm:h-16" />
+              <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[color:rgba(243,244,242,0.38)] via-[color:rgba(243,244,242,0.08)] to-transparent sm:h-24" />
+              <div className="absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-[color:rgba(243,244,242,0.46)] via-[color:rgba(243,244,242,0.14)] to-transparent sm:w-14 lg:w-16" />
+              <div className="absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-[color:rgba(243,244,242,0.46)] via-[color:rgba(243,244,242,0.14)] to-transparent sm:w-14 lg:w-16" />
               <Image
                 src={dressageHero}
                 width={1523}
@@ -121,7 +113,7 @@ export function Splash() {
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="relative">
             <article className="relative overflow-hidden rounded-[1.9rem]">
-              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[color:rgba(246,241,232,0.8)] to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[color:rgba(243,244,242,0.7)] to-transparent" />
               <Image
                 src={showJumping}
                 width={1523}
