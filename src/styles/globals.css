@@ -1,7 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --parchment: #f6f1e8;
+    --parchment-soft: #fbf8f2;
+    --ink: #221b16;
+    --ink-soft: #5f554d;
+    --sage: #6d7c63;
+    --sage-deep: #344233;
+    --saddle: #8a5a3c;
+    --saddle-deep: #5c3926;
+    --brass: #c89b59;
+    --line: rgba(34, 27, 22, 0.12);
+    --line-strong: rgba(34, 27, 22, 0.22);
+    --surface: rgba(255, 252, 247, 0.72);
+    --surface-strong: rgba(255, 252, 247, 0.9);
+    --shadow: 0 20px 60px rgba(55, 36, 24, 0.1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family:
+      "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    background:
+      radial-gradient(circle at top left, rgba(200, 155, 89, 0.14), transparent 28%),
+      linear-gradient(180deg, #fbf7f0 0%, #f6f1e8 40%, #f0e6d8 100%);
+    min-height: 100vh;
+    letter-spacing: -0.01em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family:
+      "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+  }
+
+  ::selection {
+    background: rgba(200, 155, 89, 0.3);
+    color: var(--ink);
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    outline: none;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    box-shadow: 0 0 0 3px rgba(200, 155, 89, 0.2), 0 0 0 1px var(--brass);
+    outline: none;
+  }
+}
+
+@layer components {
+  .page-shell {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .arena-rule {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(92, 57, 38, 0.24) 12%,
+      rgba(200, 155, 89, 0.5) 50%,
+      rgba(92, 57, 38, 0.24) 88%,
+      transparent 100%
+    );
+  }
+
+  .surface-card {
+    background: var(--surface);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+}
